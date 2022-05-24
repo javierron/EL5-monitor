@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "cronScraper",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 */3 * * *"
+    },
+    {
+      "type": "table",
+      "direction": "out",
+      "name": "clientData",
+      "tableName": "clientData",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
