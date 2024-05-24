@@ -8,7 +8,7 @@ module.exports = async function (context, req) {
         })
     ) 
 
-    const EL5 = ["geth", "erigon", "openethereum", "nethermind", "besu"]
+    const EL5 = ["geth", "erigon", "reth", "nethermind", "besu"]
 
     const EL5Strings = EL5.map( c => extractData(c, context.bindings.clientData))
         .map(generateDatasetString)
